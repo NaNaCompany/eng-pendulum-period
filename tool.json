@@ -1,0 +1,43 @@
+{
+  "id": "E031",
+  "title": "작은 진폭 단진자 주기 계산기",
+  "inputs_text": "피벗에서 추 질량중심까지 길이 L [m], 중력가속도 g [m/s²]",
+  "formula": "T = 2π √(L/g)",
+  "output_text": "진자 주기 T [s]",
+  "assumptions": "L,g>0. 작은 각도 근사·질점 추·질량 없는 줄·감쇠 무시 조건이다. 큰 진폭이나 물리진자는 별도 모델임을 표시한다.",
+  "purpose": "단진자 주기 계산 / 기초 진동·중력 실험 검산",
+  "sources": [
+    {
+      "label": "OpenStax · Pendulums",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums"
+    }
+  ],
+  "slug": "eng-pendulum-period",
+  "category": "진동",
+  "result_label": "작은 진폭 진자 주기 T",
+  "result_dimension": "time",
+  "fields": [
+    {
+      "key": "l",
+      "label": "피벗~질량중심 길이 L",
+      "dimension": "length",
+      "example": 1,
+      "constraint": "positive",
+      "display_unit": "m",
+      "display_value": "1"
+    },
+    {
+      "key": "g",
+      "label": "중력가속도 g",
+      "dimension": "acceleration",
+      "example": 9.80665,
+      "constraint": "positive",
+      "display_unit": "ms2",
+      "display_value": "9.80665"
+    }
+  ],
+  "site": "https://nanalab.kr/eng-pendulum-period/",
+  "repository": "https://github.com/NaNaCompany/eng-pendulum-period",
+  "condition": "",
+  "output_unit": "s"
+}
